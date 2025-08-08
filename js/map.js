@@ -162,4 +162,16 @@ function filterSites() {
 }
 
 // Initialize the map when the page loads
-document.addEventListener('DOMContentLoaded', initMap);
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize map elements
+    const statsPanel = document.getElementById('statsPanel');
+    const siteInfo = document.getElementById('siteInfo');
+    const countryInfo = document.getElementById('countryInfo');
+    
+    // Make sure all required elements exist
+    if (statsPanel && siteInfo && countryInfo) {
+        initMap();
+    } else {
+        console.error('Required DOM elements are missing');
+    }
+});
