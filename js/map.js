@@ -40,7 +40,7 @@ async function initMap() {
         countries.forEach(country => {
             const option = document.createElement('option');
             option.value = country;
-            option.textContent = `${country} (${countryStats[country].total} sites)`;
+            option.textContent = country;
             countryFilter.appendChild(option);
         });
 
@@ -51,12 +51,14 @@ async function initMap() {
         document.getElementById('typeFilter').addEventListener('change', filterSites);
         document.getElementById('countryFilter').addEventListener('change', filterSites);
 
-        // Create stats panel
-        const statsPanel = document.createElement('div');
-        statsPanel.id = 'statsPanel';
-        statsPanel.className = 'stats-panel';
-        document.querySelector('main').appendChild(statsPanel);
-        updateStatsPanel('all');
+        // Create country info panel
+        const countryInfoPanel = document.createElement('div');
+        countryInfoPanel.id = 'countryInfoPanel';
+        countryInfoPanel.className = 'country-info-panel';
+        document.querySelector('main').appendChild(countryInfoPanel);
+
+        // Initial update of country info
+        updateCountryInfo('all');
     } catch (error) {
         console.error('Error loading UNESCO sites:', error);
     }
@@ -103,25 +105,28 @@ function createMarkers(sites) {
 // Update the site information panel
 function updateSiteInfo(properties) {
     const siteDetails = document.getElementById('siteDetails');
+    const country = properties.country;
+    const stats = countryStats[country];
+    
     siteDetails.innerHTML = `
         <h3>${properties.name}</h3>
         <p><strong>Type:</strong> ${properties.type}</p>
-        <p><strong>Country:</strong> ${properties.country}</p>
+        <p><strong>Country:</strong> ${country} (${stats.total} UNESCO sites)</p>
         <p>${properties.description}</p>
     `;
 }
 
-// Update the stats panel
-function updateStatsPanel(country) {
-    const statsPanel = document.getElementById('statsPanel');
+// Update the country info panel
+function updateCountryInfo(country) {
+    const countryInfoPanel = document.getElementById('countryInfoPanel');
     if (country === 'all') {
         const totalSites = sites.length;
         const culturalSites = sites.filter(site => site.properties.type === 'Cultural').length;
         const naturalSites = sites.filter(site => site.properties.type === 'Natural').length;
         const mixedSites = sites.filter(site => site.properties.type === 'Mixed').length;
         
-        statsPanel.innerHTML = `
-            <h3>Global Statistics</h3>
+        countryInfoPanel.innerHTML = `
+            <h3>Global UNESCO Sites</h3>
             <p>Total Sites: ${totalSites}</p>
             <p>Cultural Sites: ${culturalSites}</p>
             <p>Natural Sites: ${naturalSites}</p>
@@ -129,8 +134,8 @@ function updateStatsPanel(country) {
         `;
     } else {
         const stats = countryStats[country];
-        statsPanel.innerHTML = `
-            <h3>${country} Statistics</h3>
+        countryInfoPanel.innerHTML = `
+            <h3>${country} UNESCO Sites</h3>
             <p>Total Sites: ${stats.total}</p>
             <p>Cultural Sites: ${stats.cultural}</p>
             <p>Natural Sites: ${stats.natural}</p>
@@ -151,7 +156,13 @@ function filterSites() {
     });
 
     createMarkers(filteredSites);
-    updateStatsPanel(selectedCountry);
+    updateCountryInfo(selectedCountry);
+
+    // Update the filter labels with counts
+    if (selectedCountry !== 'all') {
+        const stats = countryStats[selectedCountry];
+        document.getElementById('countryFilter').title = `${selectedCountry} - ${stats.total} UNESCO sites`;
+    }
 }
 
 // Initialize the map when the page loads
