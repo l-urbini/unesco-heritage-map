@@ -210,6 +210,160 @@
         "type": "Point",
         "coordinates": [37.3556, -3.0674]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vatican City",
+        "inscribed_year": 1984,
+        "type": "Cultural",
+        "description": "The smallest independent state in the world, center of the Roman Catholic Church.",
+        "country": "Holy See"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.4533, 41.9022]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Göreme National Park",
+        "inscribed_year": 1985,
+        "type": "Mixed",
+        "description": "Rock formations and ancient cave dwellings in Cappadocia.",
+        "country": "Turkey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.8283, 38.6437]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubrovnik Old City",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "Late-medieval walled city known as the 'Pearl of the Adriatic'.",
+        "country": "Croatia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1083, 42.6507]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rapa Nui National Park",
+        "inscribed_year": 1995,
+        "type": "Cultural",
+        "description": "Home to the famous moai statues of Easter Island.",
+        "country": "Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-109.3750, -27.1127]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forbidden City",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "Imperial palace complex of the Ming and Qing dynasties in Beijing.",
+        "country": "China"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.3972, 39.9169]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angkor",
+        "inscribed_year": 1992,
+        "type": "Cultural",
+        "description": "Archaeological site containing the remains of the different capitals of the Khmer Empire.",
+        "country": "Cambodia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8670, 13.4125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sagrada Familia",
+        "inscribed_year": 1984,
+        "type": "Cultural",
+        "description": "Unfinished basilica designed by Antoni Gaudí, combining Gothic and Art Nouveau forms.",
+        "country": "Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.1744, 41.4036]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Statue of Liberty",
+        "inscribed_year": 1984,
+        "type": "Cultural",
+        "description": "Iconic symbol of freedom and democracy, gifted by France to the United States.",
+        "country": "United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0445, 40.6892]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versailles Palace",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "Royal château and gardens that exemplify French classical architecture.",
+        "country": "France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.1204, 48.8049]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Everglades National Park",
+        "inscribed_year": 1979,
+        "type": "Natural",
+        "description": "Largest tropical wilderness in the United States, home to many rare and endangered species.",
+        "country": "United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.9284, 25.2866]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Potala Palace",
+        "inscribed_year": 1994,
+        "type": "Cultural",
+        "description": "Winter palace of the Dalai Lamas since the 7th century, symbol of Tibetan Buddhism.",
+        "country": "China"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.1170, 29.6579]
+      }
     }
   ]
 } 
