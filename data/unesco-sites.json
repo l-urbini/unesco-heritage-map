@@ -4,897 +4,421 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Minaret and Archaeological Remains of Jam",
-        "inscribed_year": 2002,
+        "name": "Aasivissuit – Nipisat. Inuit Hunting Ground between Ice and Sea",
+        "inscribed_year": 2018,
         "type": "Cultural",
-        "description": "Rising in the Ghur province, this 65m-tall minaret was built in the 12th century.",
-        "country": "Afghanistan"
+        "description": "Located inside the Arctic Circle, this cultural landscape showcases the hunting grounds of the Inuit culture.",
+        "country": "Denmark"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [64.5159, 34.3964]
+        "coordinates": [-51.4332, 67.0639]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Cultural Landscape and Archaeological Remains of the Bamiyan Valley",
-        "inscribed_year": 2003,
+        "name": "Struve Geodetic Arc",
+        "inscribed_year": 2005,
         "type": "Cultural",
-        "description": "The cultural landscape and archaeological remains of the Bamiyan Valley represent the artistic and religious developments which from the 1st to the 13th centuries characterized ancient Bakhtria.",
-        "country": "Afghanistan"
+        "description": "Chain of survey triangulations stretching from Hammerfest in Norway to the Black Sea.",
+        "country": "Sweden"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [67.8268, 34.8320]
+        "coordinates": [23.2431, 67.2767]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Natural and Cultural Heritage of the Ohrid region",
-        "inscribed_year": 1979,
+        "name": "Laponian Area",
+        "inscribed_year": 1996,
         "type": "Mixed",
-        "description": "Lake Ohrid is a superlative natural phenomenon, providing refuge for numerous endemic species of freshwater fauna and flora dating from the tertiary period.",
-        "country": "Albania"
+        "description": "One of the last and largest remaining continuous reindeer grazing areas in the world.",
+        "country": "Sweden"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [20.7196, 41.1100]
+        "coordinates": [17.5833, 67.3333]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Butrint",
-        "inscribed_year": 1992,
-        "type": "Cultural",
-        "description": "Inhabited since prehistoric times, Butrint has been the site of a Greek colony, a Roman city and a bishopric.",
-        "country": "Albania"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [20.0205, 39.7461]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Al Qal'a of Beni Hammad",
-        "inscribed_year": 1980,
-        "type": "Cultural",
-        "description": "In a mountainous site of extraordinary beauty, the ruins of the first capital of the Hammadid emirs.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [4.7933, 35.8139]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tassili n'Ajjer",
-        "inscribed_year": 1982,
-        "type": "Mixed",
-        "description": "Located in a strange lunar landscape of great geological interest, this site has one of the most important groupings of prehistoric cave art in the world.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [9.0000, 25.6667]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "M'Zab Valley",
-        "inscribed_year": 1982,
-        "type": "Cultural",
-        "description": "A traditional human habitat, created in the 10th century by the Ibadites around their five ksour (fortified cities).",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [3.6814, 32.4872]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Djémila",
-        "inscribed_year": 1982,
-        "type": "Cultural",
-        "description": "Situated 900m above sea-level, Djémila, or Cuicul, with its forum, temples, basilicas, triumphal arches and houses, is an interesting example of Roman town planning.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [5.7367, 36.3206]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tipasa",
-        "inscribed_year": 1982,
-        "type": "Cultural",
-        "description": "On the shores of the Mediterranean, Tipasa was an ancient Punic trading-post conquered by Rome and turned into a strategic base for the conquest of the kingdoms of Mauritania.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.4408, 36.5951]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Timgad",
-        "inscribed_year": 1982,
-        "type": "Cultural",
-        "description": "Timgad lies on the northern slopes of the Aurès mountains and was created as a military colony by the Emperor Trajan in AD 100.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [6.4687, 35.4842]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kasbah of Algiers",
-        "inscribed_year": 1992,
-        "type": "Cultural",
-        "description": "The Kasbah is a unique form of medina, or Islamic city. It stands in one of the finest coastal sites on the Mediterranean.",
-        "country": "Algeria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [3.0603, 36.7833]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Madriu-Perafita-Claror Valley",
+        "name": "Ilulissat Icefjord",
         "inscribed_year": 2004,
-        "type": "Cultural",
-        "description": "The cultural landscape of Madriu-Perafita-Claror Valley offers a microcosmic perspective of the way people have harvested the resources of the high Pyrenees over millennia.",
-        "country": "Andorra"
+        "type": "Natural",
+        "description": "Located on the west coast of Greenland, it is the sea mouth of Sermeq Kujalleq, one of the fastest and most active glaciers in the world.",
+        "country": "Denmark"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6000, 42.4833]
+        "coordinates": [-49.5000, 69.1333]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Mbanza Kongo",
+        "name": "Rock Art of Alta",
+        "inscribed_year": 1985,
+        "type": "Cultural",
+        "description": "This group of petroglyphs in the Alta Fjord represents a unique testimony to the settlements in the far north of Europe.",
+        "country": "Norway"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.1870, 69.9480]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Natural System of Wrangel Island Reserve",
+        "inscribed_year": 2004,
+        "type": "Natural",
+        "description": "This island has the highest level of biodiversity in the high Arctic.",
+        "country": "Russia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-179.7153, 71.1889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Putorana Plateau",
+        "inscribed_year": 2010,
+        "type": "Natural",
+        "description": "This plateau is a complete set of subarctic and arctic ecosystems in an isolated mountain range.",
+        "country": "Russia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [94.1581, 69.0469]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angkor",
+        "inscribed_year": 1992,
+        "type": "Cultural",
+        "description": "Angkor is one of the most important archaeological sites in South-East Asia.",
+        "country": "Cambodia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8670, 13.4125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Temple of Preah Vihear",
+        "inscribed_year": 2008,
+        "type": "Cultural",
+        "description": "Situated on the edge of a plateau that dominates the plain of Cambodia, this temple is dedicated to Shiva.",
+        "country": "Cambodia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.9000, 14.3931]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Temple Zone of Sambor Prei Kuk",
         "inscribed_year": 2017,
         "type": "Cultural",
-        "description": "The remains of the capital of one of the largest and most important kingdoms in southern Africa.",
-        "country": "Angola"
+        "description": "Archaeological site of Ancient Ishanapura, representing the cultural, social and political capital of the Chenla Empire.",
+        "country": "Cambodia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [14.2460, -6.2667]
+        "coordinates": [105.0644, 12.8714]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Antigua Naval Dockyard",
-        "inscribed_year": 2016,
+        "name": "Koh Ker: Archaeological Site of Ancient Lingapura",
+        "inscribed_year": 2023,
         "type": "Cultural",
-        "description": "The only Georgian-era dockyard still in existence in the world.",
-        "country": "Antigua and Barbuda"
+        "description": "Archaeological site of the temporary capital of the Khmer Empire.",
+        "country": "Cambodia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-61.7601, 17.0046]
+        "coordinates": [104.5375, 13.7853]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Los Glaciares National Park",
-        "inscribed_year": 1981,
+        "name": "Dja Faunal Reserve",
+        "inscribed_year": 1987,
         "type": "Natural",
-        "description": "Contains many large glaciers, of which 47 flow down from the Southern Patagonian Ice Field.",
-        "country": "Argentina"
+        "description": "One of Africa's most species-rich rainforests, protected from human activity by the Dja River.",
+        "country": "Cameroon"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-73.0000, -50.0000]
+        "coordinates": [13.1833, 3.1500]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Iguazu National Park",
+        "name": "L'Anse aux Meadows National Historic Site",
+        "inscribed_year": 1978,
+        "type": "Cultural",
+        "description": "The remains of an 11th-century Viking settlement, the first European presence in North America.",
+        "country": "Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.5322, 51.5953]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nahanni National Park",
+        "inscribed_year": 1978,
+        "type": "Natural",
+        "description": "The park features exceptional natural beauty, including the South Nahanni River and Virginia Falls.",
+        "country": "Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-124.5000, 61.5833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lakes of Ounianga",
+        "inscribed_year": 2012,
+        "type": "Natural",
+        "description": "A series of lakes in the heart of the Sahara desert, remnants of a much larger lake that existed during the wetter period.",
+        "country": "Chad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.5000, 19.0333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rapa Nui National Park",
+        "inscribed_year": 1995,
+        "type": "Cultural",
+        "description": "Easter Island's famous monumental statues (moai) created by the Rapa Nui people.",
+        "country": "Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-109.3750, -27.1167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Churches of Chiloé",
+        "inscribed_year": 2000,
+        "type": "Cultural",
+        "description": "Outstanding examples of wooden ecclesiastical architecture, representing a unique fusion of European and indigenous cultural traditions.",
+        "country": "Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8000, -42.4833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port, Fortresses and Group of Monuments, Cartagena",
         "inscribed_year": 1984,
-        "type": "Natural",
-        "description": "Home to one of the most spectacular waterfalls in the world.",
-        "country": "Argentina"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4333, -25.6833]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Jesuit Missions of the Guaranis",
-        "inscribed_year": 1983,
         "type": "Cultural",
-        "description": "The ruins of São Miguel das Missões in Brazil, and those of San Ignacio Miní, Santa Ana, Nuestra Señora de Loreto and Santa María la Mayor in Argentina.",
-        "country": "Argentina"
+        "description": "Cartagena's colonial walled city and fortress system are among the most complete and best preserved in South America.",
+        "country": "Colombia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.5317, -27.2553]
+        "coordinates": [-75.5500, 10.4167]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Cueva de las Manos",
+        "name": "Los Katíos National Park",
+        "inscribed_year": 1994,
+        "type": "Natural",
+        "description": "Contains exceptional biodiversity and is home to many threatened animal species, as well as many endemic plants.",
+        "country": "Colombia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.1500, 7.8500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cocos Island National Park",
+        "inscribed_year": 1997,
+        "type": "Natural",
+        "description": "The waters around this island are home to large populations of hammerhead sharks, rays, dolphins and other large marine species.",
+        "country": "Costa Rica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.0500, 5.5167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Area de Conservación Guanacaste",
         "inscribed_year": 1999,
-        "type": "Cultural",
-        "description": "The cave art in Cueva de las Manos (Cave of the Hands) dates from 13,000 to 9,000 years ago.",
-        "country": "Argentina"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-70.6667, -47.1500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Península Valdés",
-        "inscribed_year": 1999,
         "type": "Natural",
-        "description": "Important nature reserve that has significant whale and seal populations.",
-        "country": "Argentina"
+        "description": "This site demonstrates significant natural habitats for in-situ conservation of biological diversity.",
+        "country": "Costa Rica"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-63.9333, -42.5000]
+        "coordinates": [-85.6167, 10.8333]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Ischigualasto / Talampaya Natural Parks",
-        "inscribed_year": 2000,
-        "type": "Natural",
-        "description": "These two contiguous parks contain the most complete continental fossil record known from the Triassic Period.",
-        "country": "Argentina"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-67.8333, -29.8000]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Quebrada de Humahuaca",
-        "inscribed_year": 2003,
+        "name": "Historical Complex of Split with the Palace of Diocletian",
+        "inscribed_year": 1979,
         "type": "Cultural",
-        "description": "The valley shows substantial evidence of its use as a major trade route over the past 10,000 years.",
-        "country": "Argentina"
+        "description": "The ruins of Diocletian's Palace, built between the late 3rd and early 4th centuries A.D., can be found throughout the city.",
+        "country": "Croatia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-65.3489, -23.1999]
+        "coordinates": [16.4397, 43.5081]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Monasteries of Haghpat and Sanahin",
-        "inscribed_year": 1996,
+        "name": "Old City of Dubrovnik",
+        "inscribed_year": 1979,
         "type": "Cultural",
-        "description": "These two Byzantine monasteries represent the highest flowering of Armenian religious architecture.",
-        "country": "Armenia"
+        "description": "The 'Pearl of the Adriatic', situated on the Dalmatian coast, became an important Mediterranean sea power from the 13th century onwards.",
+        "country": "Croatia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [44.7103, 41.0950]
+        "coordinates": [18.1083, 42.6507]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Cathedral and Churches of Echmiatsin",
-        "inscribed_year": 2000,
-        "type": "Cultural",
-        "description": "The cathedral and churches of Echmiatsin and the archaeological remains at Zvartnots graphically illustrate the evolution of Armenian central-domed cross-hall type churches.",
-        "country": "Armenia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [44.2951, 40.1593]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Monastery of Geghard",
-        "inscribed_year": 2000,
-        "type": "Cultural",
-        "description": "The monastery of Geghard contains a number of churches and tombs, most of them cut into the rock.",
-        "country": "Armenia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [44.7967, 40.1589]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Great Barrier Reef",
-        "inscribed_year": 1981,
-        "type": "Natural",
-        "description": "The world's largest coral reef ecosystem, containing the world's largest collection of coral reefs.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [147.7000, -18.2871]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kakadu National Park",
-        "inscribed_year": 1981,
-        "type": "Mixed",
-        "description": "A unique archaeological and ethnological reserve that has been inhabited continuously for more than 40,000 years.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [132.5000, -13.0000]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Willandra Lakes Region",
-        "inscribed_year": 1981,
-        "type": "Mixed",
-        "description": "The fossil remains of a series of lakes and sand formations that date from the Pleistocene era.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [143.0000, -33.7500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tasmanian Wilderness",
-        "inscribed_year": 1982,
-        "type": "Mixed",
-        "description": "One of the last expanses of temperate rainforest in the world.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [146.0000, -42.5000]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Lord Howe Island Group",
-        "inscribed_year": 1982,
-        "type": "Natural",
-        "description": "An outstanding example of oceanic islands of volcanic origin containing a unique ecosystem.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [159.0833, -31.5500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic Centre of Vienna",
-        "inscribed_year": 2001,
-        "type": "Cultural",
-        "description": "The historic centre of Vienna is rich in architectural ensembles, including Baroque castles and gardens.",
-        "country": "Austria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [16.3738, 48.2082]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Palace and Gardens of Schönbrunn",
-        "inscribed_year": 1996,
-        "type": "Cultural",
-        "description": "The summer residence of the Habsburg rulers, an outstanding example of Baroque architecture.",
-        "country": "Austria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [16.3122, 48.1847]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Walled City of Baku",
-        "inscribed_year": 2000,
-        "type": "Cultural",
-        "description": "The Walled City of Baku represents an outstanding example of an historic urban ensemble and architecture.",
-        "country": "Azerbaijan"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [49.8322, 40.3668]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Qal'at al-Bahrain",
-        "inscribed_year": 2005,
-        "type": "Cultural",
-        "description": "Archaeological site that was once the capital of the Dilmun civilization.",
-        "country": "Bahrain"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.5225, 26.2331]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic Mosque City of Bagerhat",
-        "inscribed_year": 1985,
-        "type": "Cultural",
-        "description": "Ancient city, formerly known as Khalifatabad, featuring many mosques built in the distinctive Bengal style.",
-        "country": "Bangladesh"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [89.7333, 22.6667]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Belovezhskaya Pushcha / Białowieża Forest",
+        "name": "Plitvice Lakes National Park",
         "inscribed_year": 1979,
         "type": "Natural",
-        "description": "The forest is home to the largest population of European bison.",
-        "country": "Belarus"
+        "description": "The waters flowing over the limestone and chalk have, over thousands of years, deposited travertine barriers, creating natural dams.",
+        "country": "Croatia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [23.8333, 52.7500]
+        "coordinates": [15.6167, 44.8650]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Mir Castle Complex",
-        "inscribed_year": 2000,
+        "name": "Old Havana and its Fortification System",
+        "inscribed_year": 1982,
         "type": "Cultural",
-        "description": "The castle is an exceptional example of a central European fortification.",
-        "country": "Belarus"
+        "description": "The historic centre of Cuba's capital, founded in 1519, contains the core of the original city and its fortification system.",
+        "country": "Cuba"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [26.4722, 53.4514]
+        "coordinates": [-82.3500, 23.1333]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Historic Centre of Bruges",
-        "inscribed_year": 2000,
+        "name": "Trinidad and the Valley de los Ingenios",
+        "inscribed_year": 1988,
         "type": "Cultural",
-        "description": "Outstanding example of a medieval historic settlement.",
-        "country": "Belgium"
+        "description": "Founded in the early 16th century, Trinidad was a prosperous center for sugar trade in the 18th and 19th centuries.",
+        "country": "Cuba"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [3.2247, 51.2093]
+        "coordinates": [-79.9833, 21.8000]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "La Grand-Place, Brussels",
-        "inscribed_year": 1998,
-        "type": "Cultural",
-        "description": "The central square of Brussels is surrounded by opulent guildhalls and two larger edifices.",
-        "country": "Belgium"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [4.3525, 50.8467]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Belize Barrier Reef Reserve System",
-        "inscribed_year": 1996,
-        "type": "Natural",
-        "description": "The largest barrier reef in the northern hemisphere, with offshore atolls, mangrove forests, and coastal lagoons.",
-        "country": "Belize"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-87.5333, 17.3167]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Royal Palaces of Abomey",
-        "inscribed_year": 1985,
-        "type": "Cultural",
-        "description": "The palaces of the kings of Abomey are a unique testimony to one of the most powerful kingdoms in Africa.",
-        "country": "Benin"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.0833, 7.1833]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic City of Sucre",
-        "inscribed_year": 1991,
-        "type": "Cultural",
-        "description": "The first capital of Bolivia, with well-preserved colonial architecture.",
-        "country": "Bolivia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-65.2597, -19.0368]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tiwanaku",
-        "inscribed_year": 2000,
-        "type": "Cultural",
-        "description": "The ruins of the capital of an important pre-Hispanic empire.",
-        "country": "Bolivia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-68.6783, -16.5547]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Old Bridge Area of the Old City of Mostar",
-        "inscribed_year": 2005,
-        "type": "Cultural",
-        "description": "The reconstructed Old Bridge and Old City of Mostar is a symbol of reconciliation and coexistence.",
-        "country": "Bosnia and Herzegovina"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [17.8150, 43.3373]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tsodilo",
-        "inscribed_year": 2001,
-        "type": "Cultural",
-        "description": "A site with one of the highest concentrations of rock art in the world.",
-        "country": "Botswana"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [21.7500, -18.7500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic Town of Ouro Preto",
+        "name": "Paphos",
         "inscribed_year": 1980,
         "type": "Cultural",
-        "description": "Founded at the end of the 17th century, Ouro Preto was the focal point of the gold rush and Brazil's golden age.",
-        "country": "Brazil"
+        "description": "The remains of ancient villas, palaces, theatres, fortresses and tombs make the site an outdoor museum of Byzantine art.",
+        "country": "Cyprus"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.5044, -20.3856]
+        "coordinates": [32.4167, 34.7667]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Historic Centre of Salvador de Bahia",
-        "inscribed_year": 1985,
+        "name": "Historic Centre of Prague",
+        "inscribed_year": 1992,
         "type": "Cultural",
-        "description": "As the first capital of Brazil, Salvador de Bahia witnessed the blending of European, African and Amerindian cultures.",
-        "country": "Brazil"
+        "description": "Built between the 11th and 18th centuries, the Old Town, Lesser Town and New Town speak of the great architectural and cultural influence Prague had in medieval Europe.",
+        "country": "Czechia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.5108, -12.9747]
+        "coordinates": [14.4167, 50.0833]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Sanctuary of Bom Jesus do Congonhas",
-        "inscribed_year": 1985,
+        "name": "Historic Centre of Český Krumlov",
+        "inscribed_year": 1992,
         "type": "Cultural",
-        "description": "This sanctuary in Minais Gerais, with its soapstone sculptures by Aleijadinho, represents a unique artistic achievement.",
-        "country": "Brazil"
+        "description": "This medieval town has preserved its architectural heritage intact thanks to its peaceful evolution over more than five centuries.",
+        "country": "Czechia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.8594, -20.4958]
+        "coordinates": [14.3167, 48.8167]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Iguaçu National Park",
-        "inscribed_year": 1986,
-        "type": "Natural",
-        "description": "The park shares with Iguazu National Park in Argentina one of the world's largest and most impressive waterfalls.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4333, -25.6833]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Brasilia",
-        "inscribed_year": 1987,
+        "name": "Historic Centre of Telč",
+        "inscribed_year": 1992,
         "type": "Cultural",
-        "description": "A landmark in the history of town planning, Brasilia was founded in 1956 and inaugurated as Brazil's capital in 1960.",
-        "country": "Brazil"
+        "description": "The town's Gothic castle was reconstructed in High Gothic style in the late 15th century.",
+        "country": "Czechia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-47.8645, -15.7942]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Serra da Capivara National Park",
-        "inscribed_year": 1991,
-        "type": "Cultural",
-        "description": "Many of the numerous rock shelters in the Serra da Capivara National Park are decorated with cave paintings.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.5000, -8.8333]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic Centre of São Luís",
-        "inscribed_year": 1997,
-        "type": "Cultural",
-        "description": "The late 17th-century core of this historic town, founded by the French and occupied by the Dutch before coming under Portuguese rule.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.3097, -2.5306]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Atlantic Forest South-East Reserves",
-        "inscribed_year": 1999,
-        "type": "Natural",
-        "description": "The Atlantic Forest South-East Reserves contain some of the best and most extensive examples of Atlantic forest in Brazil.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.0000, -24.0000]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Discovery Coast Atlantic Forest Reserves",
-        "inscribed_year": 1999,
-        "type": "Natural",
-        "description": "The Discovery Coast Atlantic Forest Reserves consist of eight separate protected areas containing the best and largest examples of Atlantic forest in Brazil.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.2833, -15.2667]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Historic Centre of the Town of Diamantina",
-        "inscribed_year": 1999,
-        "type": "Cultural",
-        "description": "Diamantina shows how explorers of the Brazilian territory, diamond prospectors, and representatives of the Crown were able to adapt European models to an American context.",
-        "country": "Brazil"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.5972, -18.2442]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Boyana Church",
-        "inscribed_year": 1979,
-        "type": "Cultural",
-        "description": "Located on the outskirts of Sofia, this church has frescoes from 1259 that are among the finest examples of medieval art.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [23.2667, 42.6500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Madara Rider",
-        "inscribed_year": 1979,
-        "type": "Cultural",
-        "description": "The Madara Rider, representing a knight triumphing over a lion, is carved into a 100-m-high cliff near the village of Madara.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [27.1167, 43.2833]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Rock-Hewn Churches of Ivanovo",
-        "inscribed_year": 1979,
-        "type": "Cultural",
-        "description": "In the valley of the Roussenski Lom River, a complex of rock-hewn churches, chapels, monasteries and cells developed in the Middle Ages.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [25.9500, 43.7000]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Thracian Tomb of Kazanlak",
-        "inscribed_year": 1979,
-        "type": "Cultural",
-        "description": "This tomb dates from the Hellenistic period, around the end of the 4th century BC. It is decorated with unique murals.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [25.4000, 42.6167]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ancient City of Nessebar",
-        "inscribed_year": 1983,
-        "type": "Cultural",
-        "description": "Originally a Thracian settlement, the peninsula was colonized by the Greeks and later became an important Byzantine town.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [27.7333, 42.6583]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Pirin National Park",
-        "inscribed_year": 1983,
-        "type": "Natural",
-        "description": "The mountain scenery of Pirin National Park is dotted with over 70 glacial lakes and the oldest tree in Bulgaria.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [23.4167, 41.7500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Rila Monastery",
-        "inscribed_year": 1983,
-        "type": "Cultural",
-        "description": "Founded in the 10th century, the Rila Monastery is regarded as one of Bulgaria's most important cultural, historical and architectural monuments.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [23.3400, 42.1333]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Srebarna Nature Reserve",
-        "inscribed_year": 1983,
-        "type": "Natural",
-        "description": "The Srebarna Nature Reserve is a freshwater lake adjacent to the Danube and extending over 600 ha.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [27.0667, 44.1167]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Thracian Tomb of Sveshtari",
-        "inscribed_year": 1985,
-        "type": "Cultural",
-        "description": "Discovered in 1982 near the village of Sveshtari, this 3rd-century BC Thracian tomb reflects the fundamental structural principles of Thracian cult buildings.",
-        "country": "Bulgaria"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [26.7500, 43.7500]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ruins of Loropéni",
-        "inscribed_year": 2009,
-        "type": "Cultural",
-        "description": "The ruins of Loropéni are the best preserved of ten fortresses in the Lobi area and are part of a larger group of 100 stone enclosures.",
-        "country": "Burkina Faso"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-3.5333, 10.2500]
+        "coordinates": [15.4500, 49.1833]
       }
     }
   ]
