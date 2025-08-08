@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Great Wall of China",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "Built between the 3rd century BC and the 17th century AD, the Great Wall is the world's largest military structure.",
+        "country": "China"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.5681, 40.4319]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Machu Picchu",
+        "inscribed_year": 1983,
+        "type": "Cultural",
+        "description": "Built in the 15th century, Machu Picchu is the most significant tangible legacy of the Inca civilization.",
+        "country": "Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.5450, -13.1631]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Great Barrier Reef",
+        "inscribed_year": 1981,
+        "type": "Natural",
+        "description": "The world's largest coral reef ecosystem, home to diverse marine life.",
+        "country": "Australia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [147.7000, -18.2871]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pyramids of Giza",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "The only surviving wonder of the ancient world, built as royal tombs during the Old Kingdom period.",
+        "country": "Egypt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.1342, 29.9792]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Taj Mahal",
+        "inscribed_year": 1983,
+        "type": "Cultural",
+        "description": "An ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan.",
+        "country": "India"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.0422, 27.1751]
+      }
+    }
+  ]
+} 

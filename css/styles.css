@@ -2,557 +2,130 @@
 
 /* Reset and base styles */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Cormorant Garamond', serif;
-    background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 50%, #6b3e1a 100%);
-    background-attachment: fixed;
-    color: #f4f1e8;
-    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    /* Improve touch scrolling on mobile */
-    -webkit-overflow-scrolling: touch;
-    /* Prevent font size adjustment on iOS */
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(205, 164, 94, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(160, 82, 45, 0.05) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: -1;
-}
-
-.header {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b0e 50%, #1a1a1a 100%);
-    color: #d4af37;
-    padding: 1.5rem 2rem;
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    border-bottom: 3px solid #d4af37;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    position: relative;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 98px,
-            rgba(212, 175, 55, 0.03) 100px
-        );
-    pointer-events: none;
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.header h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    letter-spacing: 1px;
-}
-
-.header p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    margin: 0;
-    color: #f4f1e8;
-    font-style: italic;
-}
-
-.main-container {
-    position: relative;
-    height: calc(100vh - 180px);
-    min-height: 500px;
-}
-
-/* Desktop and tablet - show description */
-.header-description {
-    display: block;
-}
-
-/* Hide mobile indicator on desktop */
-.mobile-period-indicator {
-    display: none;
-}
-
-.period-filters {
+.filters {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-.period-button {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 1.25rem;
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(45, 27, 14, 0.8) 100%);
-    border: 2px solid rgba(212, 175, 55, 0.3);
-    border-radius: 8px;
-    color: #f4f1e8;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.95rem;
+select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
-    min-height: 44px;
-    text-align: center;
-    white-space: nowrap;
-    /* Touch feedback */
-    -webkit-tap-highlight-color: rgba(212, 175, 55, 0.2);
 }
 
-.period-button:hover {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(45, 27, 14, 0.9) 100%);
-    border-color: rgba(212, 175, 55, 0.6);
-    transform: translateX(3px);
-}
-
-.period-button.active {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(45, 27, 14, 0.9) 100%);
-    border-color: #d4af37;
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
-}
-
-.period-button:focus {
-    outline: none;
-    border-color: #ffd700;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-}
-
-.period-marker {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    margin-right: 0.75rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    flex-shrink: 0;
-}
-
-.period-button span {
-    font-weight: 500;
+main {
+    display: flex;
+    flex: 1;
+    position: relative;
 }
 
 #map {
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-#map::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
-    pointer-events: none;
+    flex: 1;
+    height: calc(100vh - 120px);
     z-index: 1;
 }
 
-.info-window {
-    max-width: 350px;
-    font-family: 'Cormorant Garamond', serif;
+.site-info {
+    width: 300px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
 }
 
-.info-window h3 {
-    margin: 0 0 10px 0;
-    color: #d4af37;
-    font-family: 'Cinzel', serif;
-    font-size: 1.3rem;
+.site-info h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
-.info-window p {
-    margin: 8px 0;
-    line-height: 1.5;
-    color: #2c1810;
+.site-details {
+    margin-top: 1rem;
 }
 
-.info-window a {
-    color: #8B4513;
+.site-details h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.site-details p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+/* Marker customization */
+.custom-marker {
+    background-color: #e74c3c;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
     font-weight: bold;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.info-window a:hover {
-    color: #d4af37;
-    text-decoration: underline;
+.marker-cultural {
+    background-color: #e74c3c;
 }
 
-/* Remove old site list styles as they are no longer needed */
-
-/* Responsive Design */
-
-/* Large tablets and small laptops */
-@media (max-width: 1200px) {
-    .header h1 {
-        font-size: 2.2rem;
-    }
-    
-    .period-filters {
-        gap: 0.875rem;
-    }
-    
-    .period-button {
-        padding: 0.625rem 1rem;
-        font-size: 0.9rem;
-    }
+.marker-natural {
+    background-color: #27ae60;
 }
 
-/* Tablets */
-@media (max-width: 1024px) {
-    .header h1 {
-        font-size: 2rem;
-    }
-    
-    .main-container {
-        height: calc(100vh - 160px);
-    }
-    
-    .period-filters {
-        gap: 0.75rem;
-        margin-top: 1.25rem;
-    }
-    
-    .period-button {
-        padding: 0.625rem 1rem;
-        font-size: 0.9rem;
-    }
-    
-    .period-marker {
-        width: 12px;
-        height: 12px;
-        margin-right: 0.625rem;
-    }
-}
-
-/* Mobile landscape */
-@media (max-width: 768px) and (orientation: landscape) {
-    .main-container {
-        height: calc(100vh - 140px);
-    }
-    
-    .period-filters {
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-    
-    .period-button {
-        padding: 0.5rem 0.875rem;
-        font-size: 0.85rem;
-        min-height: 40px;
-    }
-    
-    .period-marker {
-        width: 10px;
-        height: 10px;
-        margin-right: 0.5rem;
-    }
-}
-
-/* Mobile portrait */
+/* Responsive design */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px; /* Prevent zoom on iOS */
-        line-height: 1.5; /* Improved readability */
+    main {
+        flex-direction: column;
     }
-    
-    .header {
-        padding: 1rem;
-        border-bottom: 2px solid #d4af37;
-    }
-    
-    .header h1 {
-        font-size: 1.75rem;
-        line-height: 1.2;
-        margin-bottom: 0.25rem;
-        cursor: help;
-    }
-    
-    .header-description {
-        display: none;
-    }
-    
-    .main-container {
-        height: calc(100vh - 120px);
-        min-height: 400px;
-    }
-    
-    .period-filters {
-        gap: 0.5rem;
-        margin-top: 1rem;
-        justify-content: center;
-    }
-    
-    .period-button {
-        padding: 0.625rem;
-        font-size: 0.85rem;
-        min-height: 44px;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .period-text {
-        display: none;
-    }
-    
-    .period-marker {
-        width: 20px;
-        height: 20px;
-        margin-right: 0;
-        border-width: 3px;
-    }
-}
 
-/* Small mobile devices */
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5rem;
+    #map {
+        height: 60vh;
     }
-    
-    .period-button {
-        width: 40px;
-        height: 40px;
-        min-height: 40px;
-        padding: 0.5rem;
-    }
-    
-    .period-marker {
-        width: 18px;
-        height: 18px;
-        border-width: 2px;
-    }
-}
 
-/* Very small devices */
-@media (max-width: 360px) {
-    .header {
-        padding: 0.75rem;
+    .site-info {
+        width: 100%;
+        max-height: 40vh;
     }
-    
-    .header h1 {
-        font-size: 1.375rem;
-    }
-    
-    .period-button {
-        width: 36px;
-        height: 36px;
-        min-height: 36px;
-        padding: 0.4rem;
-    }
-    
-    .period-marker {
-        width: 16px;
-        height: 16px;
-        border-width: 2px;
-    }
-}
 
-/* Tooltip styles */
-[title] {
-    position: relative;
-}
-
-/* Mobile period indicator */
-@media (max-width: 768px) {
-    .mobile-period-indicator {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(45, 27, 14, 0.95) 100%);
-        backdrop-filter: blur(15px);
-        border: 2px solid rgba(212, 175, 55, 0.4);
-        border-radius: 12px;
-        padding: 1rem;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        z-index: 1000;
-        min-width: 200px;
-        max-width: calc(100vw - 40px);
-        display: block;
-    }
-    
-    .indicator-header {
-        font-family: 'Cinzel', serif;
-        font-weight: 500;
-        color: #d4af37;
-        font-size: 0.9rem;
-        margin-bottom: 0.75rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        text-align: center;
-    }
-    
-    .period-indicator-item {
-        display: flex;
+    .filters {
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 0.5rem;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 0.85rem;
-        color: #f4f1e8;
     }
-    
-    .period-indicator-item:last-child {
-        margin-bottom: 0;
-    }
-    
-    .period-indicator-marker {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-right: 0.75rem;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        flex-shrink: 0;
-    }
-    
-    /* Enhanced tooltip for title */
-    .header h1::after {
-        content: attr(title);
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(26, 26, 26, 0.95);
-        color: #f4f1e8;
-        padding: 0.75rem 1rem;
-        border-radius: 8px;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        z-index: 1001;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        font-family: 'Cormorant Garamond', serif;
-        font-weight: normal;
-        font-style: italic;
-        max-width: 280px;
-        white-space: normal;
-        text-align: center;
-        margin-top: 0.5rem;
-        pointer-events: none;
-    }
-    
-    .header h1:hover::after,
-    .header h1:focus::after {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .header h1 {
-        position: relative;
-    }
-}
 
-/* Cross-browser compatibility and accessibility improvements */
-button, input, select, textarea {
-    font-family: inherit;
-}
-
-/* Improve tap targets for better accessibility */
-.period-button {
-    position: relative;
-}
-
-.period-button::after {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    z-index: -1;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .header {
-        border-bottom-width: 4px;
-    }
-    
-    .period-button {
-        border-width: 3px;
-    }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* Dark mode support enhancement */
-@media (prefers-color-scheme: dark) {
-    .info-window {
-        background-color: #1a1a1a;
-        color: #f4f1e8;
-    }
-    
-    .info-window h3 {
-        color: #d4af37;
-    }
-    
-    .info-window p {
-        color: #f4f1e8;
-    }
-}
-
-/* Print styles */
-@media print {
-    body {
-        background: white;
-        color: black;
-    }
-    
-    .main-container {
-        display: none;
-    }
-    
-    .header {
-        background: white;
-        color: black;
-        border-bottom: 2px solid black;
-    }
-    
-    .header::after {
-        content: "\A Map interface not available in print mode. Please visit the web version for interactive features.";
-        white-space: pre;
-        display: block;
-        margin-top: 1rem;
-        font-style: italic;
+    select {
+        width: 80%;
     }
 }

@@ -1,171 +1,107 @@
-let map;
+// Initialize the map centered on a middle point
+let map = L.map('map').setView([20, 0], 2);
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Store markers for filtering
 let markers = [];
-let infoWindows = [];
-let archaeologicalSites = [];
+let sites = [];
 
-async function loadArchaeologicalData() {
-    try {
-        const response = await fetch('data/archaeological-sites.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        archaeologicalSites = await response.json();
-        console.log('Archaeological sites loaded successfully:', archaeologicalSites.length, 'sites');
-    } catch (error) {
-        console.error('Error loading archaeological sites data:', error);
-        // Fallback: you could provide a minimal dataset here if needed
-        archaeologicalSites = [];
-    }
-}
-
+// Initialize the map with UNESCO sites
 async function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: { lat: 40.4168, lng: -3.7038 },
-        mapTypeId: 'roadmap'
-    });
-    
-    // Load data first, then create markers
-    await loadArchaeologicalData();
-    loadArchaeologicalSites();
-    updateMobilePeriodIndicator();
-}
-
-function loadArchaeologicalSites() {
-    archaeologicalSites.forEach(function(site) {
-        createMarker(site);
-    });
-}
-
-function createMarker(siteData) {
-    const iconColor = siteData.period === 'Roman' ? '#8B4513' : 
-                     siteData.period === 'Visigothic' ? '#800080' : 
-                     '#CD853F';
-    
-    const marker = new google.maps.Marker({
-        position: { lat: siteData.lat, lng: siteData.lng },
-        map: map,
-        title: siteData.name,
-        icon: {
-            url: 'data:image/svg+xml;base64,' + btoa(`
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 24 36">
-                    <path fill="${iconColor}" d="M12 0C5.4 0 0 5.4 0 12s12 24 12 24 12-17.6 12-24S18.6 0 12 0z"/>
-                    <circle fill="white" cx="12" cy="12" r="6"/>
-                </svg>
-            `),
-            scaledSize: new google.maps.Size(24, 36),
-            anchor: new google.maps.Point(12, 36)
-        }
-    });
-    
-    const infoWindow = new google.maps.InfoWindow({
-        content: `
-            <div class="info-window">
-                <h3>${siteData.name}</h3>
-                <p><strong>Location:</strong> ${siteData.city}, ${siteData.province}</p>
-                <p><strong>Period:</strong> ${siteData.period}</p>
-                <p><strong>Description:</strong> ${siteData.description}</p>
-                <p><strong>Coordinates:</strong> ${siteData.lat.toFixed(4)}, ${siteData.lng.toFixed(4)}</p>
-                <p><a href="${siteData.wikipediaUrl}" target="_blank" rel="noopener noreferrer">📖 View on Wikipedia</a></p>
-            </div>
-        `
-    });
-    
-    marker.addListener('click', function() {
-        closeAllInfoWindows();
-        // Center and zoom to the clicked site
-        map.setCenter({ lat: siteData.lat, lng: siteData.lng });
-        map.setZoom(12);
-        infoWindow.open(map, marker);
-    });
-    
-    markers.push({ marker: marker, infoWindow: infoWindow, data: siteData });
-    infoWindows.push(infoWindow);
-}
-
-function closeAllInfoWindows() {
-    infoWindows.forEach(function(infoWindow) {
-        infoWindow.close();
-    });
-}
-
-// Track which periods are currently active
-let activePeriods = new Set(['Roman', 'Visigothic', 'Celtiberian-Roman']);
-
-function focusOnSite(lat, lng, siteId) {
-    map.setCenter({ lat: lat, lng: lng });
-    map.setZoom(12);
-    
-    // Find and open the site's information window
-    const markerObj = markers.find(m => m.data.id === siteId);
-    if (markerObj) {
-        closeAllInfoWindows();
-        markerObj.infoWindow.open(map, markerObj.marker);
-    }
-}
-
-function togglePeriod(period) {
-    // Close all information windows
-    closeAllInfoWindows();
-    
-    // Toggle the period in our active set
-    if (activePeriods.has(period)) {
-        activePeriods.delete(period);
-    } else {
-        activePeriods.add(period);
-    }
-    
-    // Update button appearance
-    const button = document.querySelector(`[data-period="${period}"]`);
-    if (activePeriods.has(period)) {
-        button.classList.add('active');
-    } else {
-        button.classList.remove('active');
-    }
-    
-    // Update marker visibility
-    markers.forEach(function(markerObj) {
-        if (activePeriods.has(markerObj.data.period)) {
-            markerObj.marker.setVisible(true);
-        } else {
-            markerObj.marker.setVisible(false);
-        }
-    });
-    
-    // Update mobile period indicator
-    updateMobilePeriodIndicator();
-    
-    // Always reset map view to initial position when any filter is toggled
-    map.setCenter({ lat: 40.4168, lng: -3.7038 });
-    map.setZoom(6);
-}
-
-function updateMobilePeriodIndicator() {
-    const indicatorList = document.getElementById('activePeriodsList');
-    if (!indicatorList) return;
-    
-    // Clear current content
-    indicatorList.innerHTML = '';
-    
-    // Period colors mapping
-    const periodColors = {
-        'Roman': '#8B4513',
-        'Visigothic': '#800080',
-        'Celtiberian-Roman': '#CD853F'
-    };
-    
-    // Create items for active periods
-    if (activePeriods.size === 0) {
-        indicatorList.innerHTML = '<div class="period-indicator-item">No periods active</div>';
-    } else {
-        activePeriods.forEach(period => {
-            const item = document.createElement('div');
-            item.className = 'period-indicator-item';
-            item.innerHTML = `
-                <div class="period-indicator-marker" style="background-color: ${periodColors[period]};"></div>
-                <span>${period}</span>
-            `;
-            indicatorList.appendChild(item);
+    try {
+        const response = await fetch('data/unesco-sites.json');
+        const data = await response.json();
+        sites = data.features;
+        
+        // Populate country filter
+        const countries = [...new Set(sites.map(site => site.properties.country))].sort();
+        const countryFilter = document.getElementById('countryFilter');
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country;
+            countryFilter.appendChild(option);
         });
+
+        // Create markers for all sites
+        createMarkers(sites);
+
+        // Add event listeners for filters
+        document.getElementById('typeFilter').addEventListener('change', filterSites);
+        document.getElementById('countryFilter').addEventListener('change', filterSites);
+    } catch (error) {
+        console.error('Error loading UNESCO sites:', error);
     }
 }
+
+// Create markers for the sites
+function createMarkers(sites) {
+    // Clear existing markers
+    markers.forEach(marker => marker.remove());
+    markers = [];
+
+    sites.forEach(site => {
+        const { coordinates } = site.geometry;
+        const { name, type, description, inscribed_year, country } = site.properties;
+
+        // Create custom marker
+        const marker = L.circleMarker([coordinates[1], coordinates[0]], {
+            radius: 8,
+            fillColor: type === 'Cultural' ? '#e74c3c' : '#27ae60',
+            color: '#fff',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.8
+        });
+
+        // Add popup with site information
+        marker.bindPopup(`
+            <div class="site-details">
+                <h3>${name}</h3>
+                <p><strong>Type:</strong> ${type}</p>
+                <p><strong>Country:</strong> ${country}</p>
+                <p><strong>Inscribed:</strong> ${inscribed_year}</p>
+                <p>${description}</p>
+            </div>
+        `);
+
+        // Add click event to update site info panel
+        marker.on('click', () => updateSiteInfo(site.properties));
+
+        marker.addTo(map);
+        markers.push(marker);
+    });
+}
+
+// Update the site information panel
+function updateSiteInfo(properties) {
+    const siteDetails = document.getElementById('siteDetails');
+    siteDetails.innerHTML = `
+        <h3>${properties.name}</h3>
+        <p><strong>Type:</strong> ${properties.type}</p>
+        <p><strong>Country:</strong> ${properties.country}</p>
+        <p><strong>Inscribed:</strong> ${properties.inscribed_year}</p>
+        <p>${properties.description}</p>
+    `;
+}
+
+// Filter sites based on selected type and country
+function filterSites() {
+    const selectedType = document.getElementById('typeFilter').value;
+    const selectedCountry = document.getElementById('countryFilter').value;
+
+    const filteredSites = sites.filter(site => {
+        const typeMatch = selectedType === 'all' || site.properties.type === selectedType;
+        const countryMatch = selectedCountry === 'all' || site.properties.country === selectedCountry;
+        return typeMatch && countryMatch;
+    });
+
+    createMarkers(filteredSites);
+}
+
+// Initialize the map when the page loads
+document.addEventListener('DOMContentLoaded', initMap);
