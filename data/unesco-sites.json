@@ -18,15 +18,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Machu Picchu",
+        "name": "Taj Mahal",
         "inscribed_year": 1983,
         "type": "Cultural",
-        "description": "Built in the 15th century, Machu Picchu is the most significant tangible legacy of the Inca civilization.",
-        "country": "Peru"
+        "description": "An ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan.",
+        "country": "India"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-72.5450, -13.1631]
+        "coordinates": [78.0422, 27.1751]
       }
     },
     {
@@ -46,6 +46,20 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Machu Picchu",
+        "inscribed_year": 1983,
+        "type": "Cultural",
+        "description": "Built in the 15th century, Machu Picchu is the most significant tangible legacy of the Inca civilization.",
+        "country": "Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.5450, -13.1631]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Pyramids of Giza",
         "inscribed_year": 1979,
         "type": "Cultural",
@@ -60,15 +74,141 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Taj Mahal",
-        "inscribed_year": 1983,
+        "name": "Angkor Wat",
+        "inscribed_year": 1992,
         "type": "Cultural",
-        "description": "An ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan.",
-        "country": "India"
+        "description": "The largest religious monument in the world, originally constructed as a Hindu temple dedicated to Vishnu.",
+        "country": "Cambodia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [78.0422, 27.1751]
+        "coordinates": [103.8670, 13.4125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yellowstone National Park",
+        "inscribed_year": 1978,
+        "type": "Natural",
+        "description": "The first national park in the world, known for its wildlife and unique geothermal features.",
+        "country": "United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-110.5885, 44.4280]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Acropolis of Athens",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "Ancient citadel containing the remains of several ancient Greek buildings of great architectural significance.",
+        "country": "Greece"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.7262, 37.9715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Serengeti National Park",
+        "inscribed_year": 1981,
+        "type": "Natural",
+        "description": "Famous for its annual migration of wildebeest and home to numerous other wildlife species.",
+        "country": "Tanzania"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.8333, -2.3333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Venice and its Lagoon",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "A unique cultural and architectural heritage integrated with its extraordinary natural setting.",
+        "country": "Italy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3388, 45.4371]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Galapagos Islands",
+        "inscribed_year": 1978,
+        "type": "Natural",
+        "description": "Volcanic archipelago known for its unique wildlife that inspired Charles Darwin's theory of evolution.",
+        "country": "Ecuador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.1400, -0.7400]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petra",
+        "inscribed_year": 1985,
+        "type": "Cultural",
+        "description": "Ancient city famous for its rock-cut architecture and water conduit system.",
+        "country": "Jordan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.4444, 30.3285]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mont-Saint-Michel",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "Gothic-style Benedictine abbey and village perched on a rocky islet in Normandy.",
+        "country": "France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5114, 48.6361]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stonehenge",
+        "inscribed_year": 1986,
+        "type": "Cultural",
+        "description": "Prehistoric monument consisting of a ring of standing stones, each around 13 feet high.",
+        "country": "United Kingdom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.8262, 51.1789]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kilimanjaro National Park",
+        "inscribed_year": 1987,
+        "type": "Natural",
+        "description": "Home to Africa's highest peak and largest free-standing volcanic mass.",
+        "country": "Tanzania"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.3556, -3.0674]
       }
     }
   ]
