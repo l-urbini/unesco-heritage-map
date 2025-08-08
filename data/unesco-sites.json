@@ -32,20 +32,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Great Barrier Reef",
-        "inscribed_year": 1981,
-        "type": "Natural",
-        "description": "The world's largest coral reef ecosystem, home to diverse marine life.",
-        "country": "Australia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [147.7000, -18.2871]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Machu Picchu",
         "inscribed_year": 1983,
         "type": "Cultural",
@@ -74,15 +60,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Angkor Wat",
-        "inscribed_year": 1992,
-        "type": "Cultural",
-        "description": "The largest religious monument in the world, originally constructed as a Hindu temple dedicated to Vishnu.",
-        "country": "Cambodia"
+        "name": "Great Barrier Reef",
+        "inscribed_year": 1981,
+        "type": "Natural",
+        "description": "The world's largest coral reef ecosystem, home to diverse marine life.",
+        "country": "Australia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [103.8670, 13.4125]
+        "coordinates": [147.7000, -18.2871]
       }
     },
     {
@@ -102,15 +88,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Acropolis of Athens",
-        "inscribed_year": 1987,
+        "name": "Historic Centre of Rome",
+        "inscribed_year": 1980,
         "type": "Cultural",
-        "description": "Ancient citadel containing the remains of several ancient Greek buildings of great architectural significance.",
-        "country": "Greece"
+        "description": "The historic center of Rome, including the Vatican City and major monuments of antiquity.",
+        "country": "Italy"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [23.7262, 37.9715]
+        "coordinates": [12.4853, 41.8925]
       }
     },
     {
@@ -130,15 +116,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Venice and its Lagoon",
-        "inscribed_year": 1987,
+        "name": "Angkor",
+        "inscribed_year": 1992,
         "type": "Cultural",
-        "description": "A unique cultural and architectural heritage integrated with its extraordinary natural setting.",
-        "country": "Italy"
+        "description": "Archaeological site containing the remains of the different capitals of the Khmer Empire.",
+        "country": "Cambodia"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.3388, 45.4371]
+        "coordinates": [103.8670, 13.4125]
       }
     },
     {
@@ -158,6 +144,20 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Acropolis of Athens",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "Ancient citadel containing the remains of several ancient Greek buildings of great architectural significance.",
+        "country": "Greece"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.7262, 37.9715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Petra",
         "inscribed_year": 1985,
         "type": "Cultural",
@@ -167,20 +167,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [35.4444, 30.3285]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Mont-Saint-Michel",
-        "inscribed_year": 1979,
-        "type": "Cultural",
-        "description": "Gothic-style Benedictine abbey and village perched on a rocky islet in Normandy.",
-        "country": "France"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-1.5114, 48.6361]
       }
     },
     {
@@ -214,15 +200,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Vatican City",
-        "inscribed_year": 1984,
+        "name": "Historic Cairo",
+        "inscribed_year": 1979,
         "type": "Cultural",
-        "description": "The smallest independent state in the world, center of the Roman Catholic Church.",
-        "country": "Holy See"
+        "description": "One of the oldest Islamic cities in the world, featuring historic mosques, madrasas, and fountains.",
+        "country": "Egypt"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.4533, 41.9022]
+        "coordinates": [31.2534, 30.0500]
       }
     },
     {
@@ -237,6 +223,34 @@
       "geometry": {
         "type": "Point",
         "coordinates": [34.8283, 38.6437]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mont-Saint-Michel",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "Gothic-style Benedictine abbey and village perched on a rocky islet in Normandy.",
+        "country": "France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5114, 48.6361]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Venice and its Lagoon",
+        "inscribed_year": 1987,
+        "type": "Cultural",
+        "description": "A unique cultural and architectural heritage integrated with its extraordinary natural setting.",
+        "country": "Italy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3388, 45.4371]
       }
     },
     {
@@ -284,20 +298,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Angkor",
-        "inscribed_year": 1992,
-        "type": "Cultural",
-        "description": "Archaeological site containing the remains of the different capitals of the Khmer Empire.",
-        "country": "Cambodia"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [103.8670, 13.4125]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Sagrada Familia",
         "inscribed_year": 1984,
         "type": "Cultural",
@@ -326,7 +326,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Versailles Palace",
+        "name": "Palace of Versailles",
         "inscribed_year": 1979,
         "type": "Cultural",
         "description": "Royal château and gardens that exemplify French classical architecture.",
@@ -363,6 +363,216 @@
       "geometry": {
         "type": "Point",
         "coordinates": [91.1170, 29.6579]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angkor Wat",
+        "inscribed_year": 1992,
+        "type": "Cultural",
+        "description": "The largest religious monument in the world, originally constructed as a Hindu temple.",
+        "country": "Cambodia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8670, 13.4125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kakadu National Park",
+        "inscribed_year": 1981,
+        "type": "Mixed",
+        "description": "A unique archaeological and ethnological reserve that has been inhabited continuously for more than 40,000 years.",
+        "country": "Australia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [132.5000, -13.0000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Virunga National Park",
+        "inscribed_year": 1979,
+        "type": "Natural",
+        "description": "Africa's most biologically diverse protected area, home to endangered mountain gorillas.",
+        "country": "Democratic Republic of the Congo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.5000, -1.4833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Glaciares National Park",
+        "inscribed_year": 1981,
+        "type": "Natural",
+        "description": "Contains the largest ice mantle outside of Antarctica, with 47 large glaciers.",
+        "country": "Argentina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.0000, -50.0000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Medina of Fez",
+        "inscribed_year": 1981,
+        "type": "Cultural",
+        "description": "Founded in the 9th century, it is home to the oldest university in the world.",
+        "country": "Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.0033, 34.0333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ha Long Bay",
+        "inscribed_year": 1994,
+        "type": "Natural",
+        "description": "Features thousands of limestone karsts and isles in various shapes and sizes.",
+        "country": "Vietnam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.0500, 20.9000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kremlin and Red Square",
+        "inscribed_year": 1990,
+        "type": "Cultural",
+        "description": "Historic heart of Moscow and symbol of Russia.",
+        "country": "Russia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.6178, 55.7539]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iguazu National Park",
+        "inscribed_year": 1984,
+        "type": "Natural",
+        "description": "Home to one of the largest and most spectacular waterfalls in the world.",
+        "country": "Argentina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.4333, -25.6833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Timbuktu",
+        "inscribed_year": 1988,
+        "type": "Cultural",
+        "description": "Historic center of Islamic culture, featuring three great mosques and numerous holy shrines.",
+        "country": "Mali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.0026, 16.7666]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borobudur Temple Compounds",
+        "inscribed_year": 1991,
+        "type": "Cultural",
+        "description": "The world's largest Buddhist temple, built in the 8th and 9th centuries.",
+        "country": "Indonesia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.2038, -7.6079]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ngorongoro Conservation Area",
+        "inscribed_year": 1979,
+        "type": "Mixed",
+        "description": "Vast crater that is home to a diverse array of wildlife and archaeological sites.",
+        "country": "Tanzania"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.5000, -3.2500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Persepolis",
+        "inscribed_year": 1979,
+        "type": "Cultural",
+        "description": "Ceremonial capital of the Achaemenid Empire, featuring magnificent ruins.",
+        "country": "Iran"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.8911, 29.9353]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Banaue Rice Terraces",
+        "inscribed_year": 1995,
+        "type": "Cultural",
+        "description": "Ancient terraces carved into the mountains of Ifugao.",
+        "country": "Philippines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.0550, 16.9333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sian Ka'an",
+        "inscribed_year": 1987,
+        "type": "Natural",
+        "description": "Tropical forests, mangroves, and marshes home to diverse flora and fauna.",
+        "country": "Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.4667, 19.6500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wieliczka Salt Mine",
+        "inscribed_year": 1978,
+        "type": "Cultural",
+        "description": "Historic salt mine featuring unique underground chambers and chapels.",
+        "country": "Poland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.0486, 49.9837]
       }
     }
   ]
