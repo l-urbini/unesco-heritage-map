@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNESCO World Heritage Sites Map</title>
-    
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""/>
-    
-    <!-- Custom CSS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNESCO World Heritage Sites Map</title>
+        
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+              crossorigin=""/>
+        
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-    <header>
-        <h1>UNESCO World Heritage Sites</h1>
-        <div class="filters">
-            <select id="typeFilter">
-                <option value="all">All Types</option>
-                <option value="Cultural">Cultural</option>
-                <option value="Natural">Natural</option>
-            </select>
-            <select id="countryFilter">
-                <option value="all">All Countries</option>
-            </select>
-        </div>
-    </header>
-        
-    <main>
-            <div id="map"></div>
-        <div id="siteInfo" class="site-info">
-            <h2>Site Information</h2>
-            <div id="siteDetails">
-                <p>Click on a marker to see site details</p>
+        <header>
+            <h1>UNESCO World Heritage Sites</h1>
+            <div class="filters">
+                <select id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Natural">Natural</option>
+                    <option value="Mixed">Mixed</option>
+                </select>
+                <select id="countryFilter">
+                    <option value="all">All Countries</option>
+                </select>
             </div>
-        </div>
-    </main>
+            <div id="statsPanel" class="stats-panel">
+                <h3>Global Statistics</h3>
+                <p>Total Sites: <span id="totalSites">0</span></p>
+                <p>Cultural: <span id="culturalSites">0</span></p>
+                <p>Natural: <span id="naturalSites">0</span></p>
+                <p>Mixed: <span id="mixedSites">0</span></p>
+            </div>
+        </header>
+            
+        <main>
+            <div id="map"></div>
+            <div id="siteInfo" class="site-info">
+                <h2>Site Information</h2>
+                <div id="siteDetails">
+                    <p>Click on a marker to see site details</p>
+                </div>
+            </div>
+            <div id="countryInfo" class="country-info-panel">
+                <h3>Country Statistics</h3>
+                <p>Select a country to see its heritage sites breakdown</p>
+            </div>
+        </main>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
-    
-    <!-- Custom JS -->
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
+        
+        <!-- Custom JS -->
         <script src="js/map.js"></script>
     </body>
 </html>
