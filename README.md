@@ -2,6 +2,8 @@
 
 An interactive web application that displays UNESCO World Heritage Sites around the world. This project uses Leaflet.js for map visualization and provides information about cultural and natural heritage sites recognized by UNESCO.
 
+🌍 **[View Live Map](https://l-urbini.github.io/unesco-heritage-map/)**
+
 ## Features
 
 - Interactive world map showing UNESCO World Heritage Sites
@@ -21,7 +23,7 @@ An interactive web application that displays UNESCO World Heritage Sites around 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/unesco-heritage-map.git
+   git clone https://github.com/l-urbini/unesco-heritage-map.git
    ```
 
 2. Open `index.html` in your web browser to view the map.
