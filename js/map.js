@@ -9,6 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Store markers for filtering
 let markers = [];
 let sites = [];
+let countryStats = {};
 
 // Initialize the map with UNESCO sites
 async function initMap() {
@@ -17,13 +18,29 @@ async function initMap() {
         const data = await response.json();
         sites = data.features;
         
+        // Calculate sites per country
+        countryStats = sites.reduce((acc, site) => {
+            const country = site.properties.country;
+            if (!acc[country]) {
+                acc[country] = {
+                    total: 0,
+                    cultural: 0,
+                    natural: 0,
+                    mixed: 0
+                };
+            }
+            acc[country].total++;
+            acc[country][site.properties.type.toLowerCase()]++;
+            return acc;
+        }, {});
+
         // Populate country filter
         const countries = [...new Set(sites.map(site => site.properties.country))].sort();
         const countryFilter = document.getElementById('countryFilter');
         countries.forEach(country => {
             const option = document.createElement('option');
             option.value = country;
-            option.textContent = country;
+            option.textContent = `${country} (${countryStats[country].total} sites)`;
             countryFilter.appendChild(option);
         });
 
@@ -33,6 +50,13 @@ async function initMap() {
         // Add event listeners for filters
         document.getElementById('typeFilter').addEventListener('change', filterSites);
         document.getElementById('countryFilter').addEventListener('change', filterSites);
+
+        // Create stats panel
+        const statsPanel = document.createElement('div');
+        statsPanel.id = 'statsPanel';
+        statsPanel.className = 'stats-panel';
+        document.querySelector('main').appendChild(statsPanel);
+        updateStatsPanel('all');
     } catch (error) {
         console.error('Error loading UNESCO sites:', error);
     }
@@ -51,7 +75,7 @@ function createMarkers(sites) {
         // Create custom marker
         const marker = L.circleMarker([coordinates[1], coordinates[0]], {
             radius: 8,
-            fillColor: type === 'Cultural' ? '#e74c3c' : '#27ae60',
+            fillColor: type === 'Cultural' ? '#e74c3c' : type === 'Natural' ? '#27ae60' : '#f1c40f',
             color: '#fff',
             weight: 2,
             opacity: 1,
@@ -87,6 +111,34 @@ function updateSiteInfo(properties) {
     `;
 }
 
+// Update the stats panel
+function updateStatsPanel(country) {
+    const statsPanel = document.getElementById('statsPanel');
+    if (country === 'all') {
+        const totalSites = sites.length;
+        const culturalSites = sites.filter(site => site.properties.type === 'Cultural').length;
+        const naturalSites = sites.filter(site => site.properties.type === 'Natural').length;
+        const mixedSites = sites.filter(site => site.properties.type === 'Mixed').length;
+        
+        statsPanel.innerHTML = `
+            <h3>Global Statistics</h3>
+            <p>Total Sites: ${totalSites}</p>
+            <p>Cultural Sites: ${culturalSites}</p>
+            <p>Natural Sites: ${naturalSites}</p>
+            <p>Mixed Sites: ${mixedSites}</p>
+        `;
+    } else {
+        const stats = countryStats[country];
+        statsPanel.innerHTML = `
+            <h3>${country} Statistics</h3>
+            <p>Total Sites: ${stats.total}</p>
+            <p>Cultural Sites: ${stats.cultural}</p>
+            <p>Natural Sites: ${stats.natural}</p>
+            <p>Mixed Sites: ${stats.mixed}</p>
+        `;
+    }
+}
+
 // Filter sites based on selected type and country
 function filterSites() {
     const selectedType = document.getElementById('typeFilter').value;
@@ -99,6 +151,7 @@ function filterSites() {
     });
 
     createMarkers(filteredSites);
+    updateStatsPanel(selectedCountry);
 }
 
 // Initialize the map when the page loads
