@@ -46,7 +46,7 @@ function createMarkers(sites) {
 
     sites.forEach(site => {
         const { coordinates } = site.geometry;
-        const { name, type, description, inscribed_year, country } = site.properties;
+        const { name, type, description, country } = site.properties;
 
         // Create custom marker
         const marker = L.circleMarker([coordinates[1], coordinates[0]], {
@@ -64,7 +64,6 @@ function createMarkers(sites) {
                 <h3>${name}</h3>
                 <p><strong>Type:</strong> ${type}</p>
                 <p><strong>Country:</strong> ${country}</p>
-                <p><strong>Inscribed:</strong> ${inscribed_year}</p>
                 <p>${description}</p>
             </div>
         `);
@@ -84,7 +83,6 @@ function updateSiteInfo(properties) {
         <h3>${properties.name}</h3>
         <p><strong>Type:</strong> ${properties.type}</p>
         <p><strong>Country:</strong> ${properties.country}</p>
-        <p><strong>Inscribed:</strong> ${properties.inscribed_year}</p>
         <p>${properties.description}</p>
     `;
 }
